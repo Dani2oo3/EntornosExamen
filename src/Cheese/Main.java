@@ -30,6 +30,6 @@ public class Main {
          lista.registraProducto(producto);
          producto.imprime_etiqueta();
          //****
-                
+            //Se ha terminado    
      }
 }
