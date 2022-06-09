@@ -49,7 +49,11 @@ public class ListaProductos {
     
         if ((campo.replace(" ","").isEmpty()) || (campo == null))  return true; else return false;
     }
-
+    /**
+     * Sirve para listar los productos
+     * 
+     * @param nombre es el nombre de los productos
+     */
     public ListaProductos(String nombre) {
     	if (parametro_vacio(nombre)) {
     		this.nombreLista = "noNamed";
@@ -58,9 +62,20 @@ public class ListaProductos {
     	this.nombreLista = nombre;
     	}
     }
+    /**
+     * Mira si existe el nombre del producto en la lista
+     * @return NumProductos
+     * 
+     */
     public int totalProductos(){
             return this.getNumProductos();
     }
+    /**
+     * Sirva para registrar el producto detro de nuestro array
+     * 
+     * @param prod es el producto
+     * @return prod
+     */
         
     public Producto registraProducto(Producto prod) {
         
@@ -72,7 +87,13 @@ public class ListaProductos {
         this.setNumProductos(n);
         return prod;
     }
-
+    
+    /**
+     * Sirva para descartar el producto o removerlo
+     * 
+     * @param codigo el codigo del producto
+     * @return prod
+     */
     public Producto descartaProducto(String codigo) { 
         
         Producto prod = encuentraProducto(codigo);
@@ -83,7 +104,13 @@ public class ListaProductos {
         }
         return prod;
     }
-
+    
+    /**
+     * Va a mirar donde se encuentra un producto
+     * 
+     * @param codigo el codigo del producto
+     * @return listaP.get(codigo)
+     */
     public Producto encuentraProducto(String codigo) { 
         Producto prod = null;
         
@@ -102,7 +129,6 @@ public class ListaProductos {
         ArrayList<Producto> prodsList = new ArrayList<>();
         prodsList.addAll(listaP.values());
         return prodsList;
-    }
-    
+    }    
 
 }
