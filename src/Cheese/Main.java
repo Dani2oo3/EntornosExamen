@@ -1,8 +1,8 @@
 /*
-*	grupo  :
-*	alumno :
-*	n.exp. :
-*	fecha  :
+*	grupo  : 1-gdam
+*	alumno : Daniel Fernández Mateos
+*	n.exp. : 7252
+*	fecha  : 09/06/2022
  */
 package Cheese;
 
