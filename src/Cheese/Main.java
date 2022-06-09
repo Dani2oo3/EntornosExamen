@@ -29,6 +29,7 @@ public class Main {
          Producto producto2 = new Producto ("numero", "tipo", 023456, 8765);
          lista.registraProducto(producto);
          producto.imprime_etiqueta();
+         //****
                 
      }
 }
